@@ -1,0 +1,22 @@
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    height: 540px;
+    width: 540px;
+    gap: 10px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.btn{
+    border-radius: 5px;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    transition: ease 200ms;
+    cursor: pointer;
+}
+.btn:hover{
+    scale: 1.05;
+    transition: ease-out    220ms;
+}
