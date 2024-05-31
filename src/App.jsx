@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { Board } from './components/Board'
+import { Impossible} from './components/Impossible'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Board/>
+      <Impossible/>
     </>
   )
 }
