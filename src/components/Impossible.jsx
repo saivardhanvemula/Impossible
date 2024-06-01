@@ -14,7 +14,7 @@ export const Impossible = () => {
         if (!Admin) {
             coordsSet.add(`${n1},${n2}`);
         }
-        while (coordsSet.size < 3) {
+        while (coordsSet.size < 2) {
             const a = Math.floor(Math.random() * 5) + 1;
             const b = Math.floor(Math.random() * 5) + 1;
             if (a == Adminbtn[0] && b == Adminbtn[1]) {
@@ -27,7 +27,6 @@ export const Impossible = () => {
     }
     function placeBomb(e) {
         if (!Bomb) {
-            // console.log(e.target.className.split(" ")[1]);
             let n = e.target.className.split(" ")[1];
             setAdminbtn([Number(n[1]), Number(n[2])]);
             setCoords([getRandomCoordinates(Number(n[1]), Number(n[2]))]);
